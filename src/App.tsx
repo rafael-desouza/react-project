@@ -1,11 +1,13 @@
 import React from 'react'
-import GlobalStyle from './styles/global'
 
-function App() {
+import GlobalStyle from './styles/global'
+import MainHeader from 'components/MainHeader/index'
+
+const App = () => {
   return (
     <>
       <GlobalStyle />
-      Hello World
+      <MainHeader />
     </>
   )
 }
