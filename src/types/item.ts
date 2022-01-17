@@ -1,4 +1,4 @@
-export interface Item {
+type Item = {
   id: string
   createdAt: Date
   name: string
@@ -6,3 +6,5 @@ export interface Item {
   image: string
   stock: number
 }
+
+export default Item
