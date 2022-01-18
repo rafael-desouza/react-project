@@ -1,6 +1,8 @@
 import CartAddIcon from 'assets/images/CartAddIcon'
-import React from 'react'
+import Modal from 'components/UI/Modal'
+import React, { useState } from 'react'
 import Item from 'types/item'
+import ProductModal from '../ProductModal'
 import Container from './styles'
 
 interface Props {
@@ -8,9 +10,22 @@ interface Props {
 }
 
 const Product: React.FC<Props> = ({ item }) => {
+  const [productInfoIsShown, setProductInfoIsShown] = useState(false)
+
+  const showProductInfo = () => {
+    productInfoIsShown
+      ? setProductInfoIsShown(false)
+      : setProductInfoIsShown(true)
+  }
+
   return (
     <Container img_url={item.image}>
-      <span className="top-wrapper"></span>
+      {productInfoIsShown && (
+        <Modal onClick={showProductInfo}>
+          <ProductModal onClose={showProductInfo} item={item} />
+        </Modal>
+      )}
+      <span className="top-wrapper" onClick={showProductInfo}></span>
       <span className="bottom-wrapper">
         <span className="bottom-content">
           <span className="item-name">{item.name}</span>
