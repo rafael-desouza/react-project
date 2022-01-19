@@ -5,6 +5,7 @@ type Item = {
   price: string
   image: string
   stock: number
+  amount: number
 }
 
 export default Item

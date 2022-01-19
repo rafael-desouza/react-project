@@ -22,6 +22,7 @@ const ProductsList = () => {
         price: items.price,
         stock: items.stock,
         image: items.image.replace('com', 'com.br'),
+        amount: 1,
       }
 
       newItemsList.push(newItem)

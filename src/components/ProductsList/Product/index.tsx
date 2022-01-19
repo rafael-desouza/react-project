@@ -1,6 +1,7 @@
 import CartAddIcon from 'assets/images/CartAddIcon'
 import Modal from 'components/UI/Modal'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import CartContext from 'store/cart-context'
 import Item from 'types/item'
 import ProductModal from '../ProductModal'
 import Container from './styles'
@@ -11,6 +12,8 @@ interface Props {
 
 const Product: React.FC<Props> = ({ item }) => {
   const [productInfoIsShown, setProductInfoIsShown] = useState(false)
+
+  const cartState = useContext(CartContext)
 
   const showProductInfo = () => {
     productInfoIsShown
@@ -32,7 +35,11 @@ const Product: React.FC<Props> = ({ item }) => {
           <span className="item-price">{`R$ ${item.price}`}</span>
         </span>
         <span className="bottom-ico">
-          <span className="cart-add-icon" data-testid="cart-add-icon">
+          <span
+            className="cart-add-icon"
+            data-testid="cart-add-icon"
+            onClick={cartState.addItem.bind('null', item)}
+          >
             <CartAddIcon />
           </span>
         </span>

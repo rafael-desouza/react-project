@@ -1,19 +1,10 @@
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
-import Item from 'types/item'
+import mockedItem from 'tests/mockedItemBuilder'
 import Product from '..'
 
 describe('Product', () => {
   beforeEach(() => render(<Product item={mockedItem} />))
-
-  const mockedItem: Item = {
-    id: '1',
-    createdAt: new Date(),
-    name: 'Test Product',
-    price: '99.99',
-    stock: 5,
-    image: 'http://lorempixel.com.br/640/480/food',
-  }
 
   test('deve verificar o elemento com o valor Test Product e verificar se ele contem a classe item-name', () => {
     const itemName = screen.getByText('Test Product')

@@ -1,17 +1,8 @@
 import React from 'react'
 import { fireEvent, render, screen } from '@testing-library/react'
 
-import Item from 'types/item'
 import ProductModal from '..'
-
-const mockedItem: Item = {
-  id: '1',
-  createdAt: new Date(),
-  name: 'Test Product',
-  price: '99.99',
-  stock: 5,
-  image: 'http://lorempixel.com.br/640/480/food',
-}
+import mockedItem from 'tests/mockedItemBuilder'
 
 const handleClose = jest.fn()
 
