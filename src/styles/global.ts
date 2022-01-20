@@ -2,15 +2,16 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
     :root{
-    --background: #FFFFFF;
-    --surface: #222222;
+    --background: #F1F1F1;
+    --surface: #F80032;
     --primary: #43BA88;
     --secondary: #2B2B2B;
     --onBackground: #222222;
-    --onSurface: #FFFFFF;
-    --onPrimary:#FFFFFF;
-    --onSecondary:#FFFFFF ;
+    --onSurface: #F1F1F1;
+    --onPrimary:#F1F1F1;
+    --onSecondary:#F1F1F1 ;
 
+    --default-header: 8rem;
     }   
     
     
@@ -23,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 
     html{
         @media (max-width: 1080px){
-            font-size: 93.75%;
+            font-size: 70%;
         }
 
         @media (max-width: 720px){

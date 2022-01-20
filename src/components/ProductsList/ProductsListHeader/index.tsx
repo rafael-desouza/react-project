@@ -1,16 +1,17 @@
+import Logo from 'components/common'
 import React from 'react'
 import CartButton from './CartButton'
 import Container from './styles'
 
-const MainHeader = () => {
+const ProductsListHeader = () => {
   return (
     <Container>
-      <header className="header-content">
-        <span className="title">Liven Shop</span>
+      <header data-testid="header" className="header-content">
+        <Logo />
         <CartButton />
       </header>
     </Container>
   )
 }
 
-export default MainHeader
+export default ProductsListHeader

@@ -1,6 +1,6 @@
 import CartAddIcon from 'assets/images/CartAddIcon'
 import Modal from 'components/UI/Modal'
-import React, { useContext, useState } from 'react'
+import React, { memo, useContext, useState } from 'react'
 import CartContext from 'store/cart-context'
 import Item from 'types/item'
 import ProductModal from '../ProductModal'
@@ -48,4 +48,4 @@ const Product: React.FC<Props> = ({ item }) => {
   )
 }
 
-export default Product
+export default memo(Product)

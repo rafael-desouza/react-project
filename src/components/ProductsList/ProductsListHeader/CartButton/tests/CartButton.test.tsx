@@ -14,13 +14,6 @@ describe('Cart button', () => {
     expect(cartIcon).toHaveClass('cart-icon')
   })
 
-  test('deve conter o texto carrinho com a classe cart-content', () => {
-    const cartContent = screen.getByText('Carrinho')
-
-    expect(cartContent).toBeInTheDocument()
-    expect(cartContent).toHaveClass('cart-content')
-  })
-
   test('deve conter o valor 0 com a classe cart-size', () => {
     const cartSize = screen.getByText('0')
 

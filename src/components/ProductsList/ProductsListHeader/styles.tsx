@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   background-color: var(--surface);
+  height: var(--default-header);
+  display: flex;
+  align-items: center;
+  z-index: 1;
 
   & .header-content {
     padding: 1rem;

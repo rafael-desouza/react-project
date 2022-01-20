@@ -18,10 +18,7 @@ const CartButton = () => {
         <div className="wrapper">
           <span className="cart-icon" data-testid="cart-icon">
             <CartIcon />
-          </span>
-          <span className="cart-content">Carrinho</span>
-          <span className="cart-size" data-testid="cart-size">
-            {numberOfCartItems}
+            <div className="cart-size">{numberOfCartItems}</div>
           </span>
         </div>
       </Link>

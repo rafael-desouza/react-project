@@ -1,15 +1,24 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
+  & .products-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
   @media (min-width: 720px) {
-    grid-template-columns: repeat(3, 1fr);
+    & .products-list {
+      width: 90%;
+      margin: auto;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   @media (min-width: 1080px) {
-    grid-template-columns: repeat(5, 1fr);
+    & .products-list {
+      width: 80%;
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 `
 

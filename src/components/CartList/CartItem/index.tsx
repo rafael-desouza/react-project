@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Item from 'types/item'
 import Container from './styles'
 
@@ -42,4 +42,4 @@ const CartItem = ({ item, onAdd, onRemove }: Props) => {
   )
 }
 
-export default CartItem
+export default memo(CartItem)

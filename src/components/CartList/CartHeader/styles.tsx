@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 const Container = styled.header`
   background-color: var(--surface);
+  display: flex;
   position: fixed;
-  height: 5rem;
+  height: var(--default-header);
   width: 100%;
   top: 0;
   left: 0;

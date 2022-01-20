@@ -1,5 +1,5 @@
 import { AxiosRequestConfig, AxiosResponse } from 'axios'
-import MainHeader from 'components/MainHeader'
+import ProductsListHeader from 'components/ProductsList/ProductsListHeader'
 import useSendRequest from 'hooks/use-send-request'
 import React, { useCallback, useEffect, useState } from 'react'
 
@@ -46,14 +46,14 @@ const ProductsList = () => {
   }, [fetchItemsList])
 
   return (
-    <>
-      <MainHeader />
-      <Container>
+    <Container>
+      <ProductsListHeader />
+      <div className="products-list">
         {items.map(product => (
           <Product key={product.id} item={product} />
         ))}
-      </Container>
-    </>
+      </div>
+    </Container>
   )
 }
 

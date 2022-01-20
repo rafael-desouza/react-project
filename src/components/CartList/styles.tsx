@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   position: relative;
-  margin: 5rem auto 0;
+  margin: var(--default-header) auto 0;
   width: 95%;
 
   & .empty-cart {
     display: block;
+    background: red;
     width: 90%;
     padding: 2rem;
     margin: auto;

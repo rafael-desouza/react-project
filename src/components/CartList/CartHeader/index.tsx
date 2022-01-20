@@ -1,3 +1,4 @@
+import Logo from 'components/common'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Container from './styles'
@@ -5,9 +6,9 @@ import Container from './styles'
 const CartHeader = () => {
   return (
     <Container>
-      <header className="header-content">
+      <header className="header-content" data-testid="header">
         <Link to="/" className="title">
-          Liven Shop
+          <Logo />
         </Link>
       </header>
     </Container>
