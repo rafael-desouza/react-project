@@ -1,17 +1,15 @@
 import React from 'react'
 
 import GlobalStyle from './styles/global'
-import MainHeader from 'components/MainHeader/index'
-import ProductsList from 'components/ProductsList'
 import { CartContextProvider } from 'store/cart-context'
+import MainRoutes from 'routes'
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
       <CartContextProvider>
-        <MainHeader />
-        <ProductsList />
+        <MainRoutes />
       </CartContextProvider>
     </>
   )

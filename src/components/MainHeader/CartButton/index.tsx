@@ -1,5 +1,6 @@
 import CartIcon from 'assets/images/CartIcon'
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import CartContext from 'store/cart-context'
 import Container from './styles'
 
@@ -13,13 +14,17 @@ const CartButton = () => {
 
   return (
     <Container>
-      <span className="cart-icon" data-testid="cart-icon">
-        <CartIcon />
-      </span>
-      <span className="cart-content">Carrinho</span>
-      <span className="cart-size" data-testid="cart-size">
-        {numberOfCartItems}
-      </span>
+      <Link to={'/cart'} className="link">
+        <div className="wrapper">
+          <span className="cart-icon" data-testid="cart-icon">
+            <CartIcon />
+          </span>
+          <span className="cart-content">Carrinho</span>
+          <span className="cart-size" data-testid="cart-size">
+            {numberOfCartItems}
+          </span>
+        </div>
+      </Link>
     </Container>
   )
 }

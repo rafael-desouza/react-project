@@ -1,11 +1,12 @@
 import { render, screen } from '@testing-library/react'
 import React from 'react'
 import { MemoryRouter } from 'react-router-dom'
-import MainHeader from '..'
+import CartHeader from '..'
 
-describe('Main Header', () => {
-  test('deve ter um element de classe titulo com o nome Liven shop', () => {
-    render(<MainHeader />, { wrapper: MemoryRouter })
+describe('CartHeader', () => {
+  test('deve renderizar o Cabeçalho do carrinho e verificar a renderização do logo', () => {
+    render(<CartHeader />, { wrapper: MemoryRouter })
+
     const title = screen.getByText('Liven Shop')
 
     expect(title).toHaveClass('title')

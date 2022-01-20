@@ -56,7 +56,7 @@ const cartReducer = (state: State = defaultState, action: Action) => {
     if (existingCartItem) {
       updatedItem = {
         ...existingCartItem,
-        amount: existingCartItem.amount + requestItem.amount,
+        amount: existingCartItem.amount + 1,
       }
       updatedItems = [...state.items]
       updatedItems[existingCartItemIndex] = updatedItem
