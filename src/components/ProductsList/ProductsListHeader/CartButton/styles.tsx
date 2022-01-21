@@ -12,21 +12,21 @@ const Container = styled.div`
     .logo {
       width: 3rem;
       height: 3rem;
-      fill: var(--onSurface);
+      fill: var(--onPrimary);
     }
 
     & .cart-size {
       display: flex;
       justify-content: center;
       align-items: center;
-      right: 0;
-      top: -10%;
-      width: 1.5rem;
-      height: 1.5rem;
+      right: -1rem;
+      top: -1rem;
+      width: 2rem;
+      height: 2rem;
       border-radius: 50%;
       position: absolute;
-      font-size: 1rem;
-      background: var(--primary);
+      font-size: 1.5rem;
+      background: var(--surface);
     }
   }
 `

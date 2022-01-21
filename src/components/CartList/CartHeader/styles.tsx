@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
 const Container = styled.header`
-  background-color: var(--surface);
+  background-color: var(--primary);
+  margin: auto;
   display: flex;
-  position: fixed;
   height: var(--default-header);
-  width: 100%;
   top: 0;
   left: 0;
 
@@ -23,6 +22,12 @@ const Container = styled.header`
       color: var(--primary);
       font-size: 2rem;
       font-family: 'Mochiy Pop P One', sans-serif;
+    }
+  }
+
+  @media (min-width: 720px) {
+    & .header-content {
+      width: 65%;
     }
   }
 `

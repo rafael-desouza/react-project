@@ -6,7 +6,7 @@ import CartList from 'components/CartList'
 
 const MainRoutes = () => {
   return (
-    <div style={{ position: 'relative' }}>
+    <div>
       <main>
         <Router>
           <Routes>

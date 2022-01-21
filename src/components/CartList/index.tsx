@@ -55,10 +55,12 @@ const CartList = () => {
   return (
     <Container>
       <CartHeader />
-      <div className="my-cart">Meu carrinho</div>
-      {total > 0 && cartItems}
-      {total > 0 && totalInfo()}
-      {total === 0 && emptyCart()}
+      <div className="content">
+        <div className="my-cart">Meu carrinho</div>
+        {total > 0 && cartItems}
+        {total > 0 && totalInfo()}
+        {total === 0 && emptyCart()}
+      </div>
     </Container>
   )
 }

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Container = styled.div`
   & div {
     font-family: 'Courier Prime', sans-serif;
-    color: var(--onSurface);
+    color: var(--onPrimary);
     font-weight: bolder;
     position: relative;
     font-size: 2.5rem;

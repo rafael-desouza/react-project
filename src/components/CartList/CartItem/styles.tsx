@@ -7,7 +7,7 @@ const Container = styled.div`
   grid-template-columns: repeat(10, auto);
   grid-template-rows: repeat(5, auto);
   grid-column-gap: 1rem;
-  box-shadow: 0 0 0.25rem 0.1rem var(--surface);
+  box-shadow: 0 0 0.25rem 0.1rem var(--primary);
   margin-bottom: 1rem;
 
   & img {

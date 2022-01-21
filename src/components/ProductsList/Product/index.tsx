@@ -22,28 +22,27 @@ const Product: React.FC<Props> = ({ item }) => {
   }
 
   return (
-    <Container img_url={item.image}>
+    <Container>
       {productInfoIsShown && (
         <Modal onClick={showProductInfo}>
           <ProductModal onClose={showProductInfo} item={item} />
         </Modal>
       )}
-      <span className="top-wrapper" onClick={showProductInfo}></span>
-      <span className="bottom-wrapper">
-        <span className="bottom-content">
-          <span className="item-name">{item.name}</span>
-          <span className="item-price">{`R$ ${item.price}`}</span>
-        </span>
-        <span className="bottom-ico">
-          <span
-            className="cart-add-icon"
-            data-testid="cart-add-icon"
-            onClick={cartState.addItem.bind('null', item)}
-          >
-            <CartAddIcon />
-          </span>
-        </span>
-      </span>
+      <img src={item.image} alt="" onClick={showProductInfo} />
+      <div className="content">
+        <div className="item-name">{item.name}</div>
+        <div className="item-price" data-testid="item-price">
+          <span>R$</span>
+          {item.price}
+        </div>
+      </div>
+      <div
+        className="cart-add-icon"
+        data-testid="cart-add-icon"
+        onClick={cartState.addItem.bind('null', item)}
+      >
+        <span>comprar</span>
+      </div>
     </Container>
   )
 }
