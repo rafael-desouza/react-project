@@ -8,7 +8,7 @@ const Container = styled.div`
     margin: auto;
     & .empty-cart {
       display: block;
-      background: red;
+      background: #f0f0f0;
       width: 90%;
       padding: 2rem;
       margin: auto;

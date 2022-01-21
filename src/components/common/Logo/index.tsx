@@ -3,7 +3,7 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <Container>
+    <Container className="company-logo">
       <div>livenshop</div>
     </Container>
   )

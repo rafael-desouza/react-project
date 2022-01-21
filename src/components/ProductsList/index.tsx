@@ -1,7 +1,9 @@
+import React, { useCallback, useEffect, useState } from 'react'
+
 import { AxiosRequestConfig, AxiosResponse } from 'axios'
 import ProductsListHeader from 'components/ProductsList/ProductsListHeader'
 import useSendRequest from 'hooks/use-send-request'
-import React, { useCallback, useEffect, useState } from 'react'
+import Footer from 'components/CartList/Footer'
 
 import Item from 'types/item'
 import Product from './Product'
@@ -53,6 +55,7 @@ const ProductsList = () => {
           <Product key={product.id} item={product} />
         ))}
       </div>
+      <Footer />
     </Container>
   )
 }

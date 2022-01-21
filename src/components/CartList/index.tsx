@@ -29,7 +29,7 @@ const CartList = () => {
   const emptyCart = () => {
     return (
       <div className="empty-cart" data-testid="empty-cart">
-        <h1>Seu carrinho está vazia</h1>
+        <h1>Seu carrinho está vazio</h1>
         <p>
           Temos muitas ofertas te esperando!!! Volte a tela inicial e
           aproveite😜

@@ -20,6 +20,25 @@ const Container = styled.div`
       font-size: 2rem;
       font-family: 'Mochiy Pop P One', sans-serif;
     }
+
+    .login {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      margin-right: 1rem;
+      color: var(--onPrimary);
+
+      .login-ico {
+        margin-right: 0.5rem;
+        font-size: 2.5rem;
+      }
+
+      .login-text {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 `
 

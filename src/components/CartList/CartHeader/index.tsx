@@ -1,4 +1,4 @@
-import Logo from 'components/common'
+import Logo from 'components/common/Logo'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Container from './styles'
