@@ -18,7 +18,7 @@ const ProductsListHeader = ({ onSearch }: Props) => {
           <FaUserCircle className="login-ico" />
           <span className="login-text">
             <span> Oi, Faça Login </span>
-            <span> ou cadastra-se</span>
+            <span> ou cadastre-se</span>
           </span>
         </span>
         <CartButton />

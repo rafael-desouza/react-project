@@ -1,4 +1,3 @@
-import CartAddIcon from 'assets/images/CartAddIcon'
 import Modal from 'components/UI/Modal'
 import React, { memo, useContext, useState } from 'react'
 import CartContext from 'store/cart-context'

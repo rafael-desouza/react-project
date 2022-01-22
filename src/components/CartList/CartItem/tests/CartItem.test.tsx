@@ -24,7 +24,7 @@ describe('first', () => {
     expect(itemAmount).toHaveClass('amount')
   })
 
-  test('deve renderizar o botão adicionar e verificar se a função onAdd foi invocada', () => {
+  test('deve renderizar o botão adicionar e verificar se a função onAdd foi invocada corretamente', () => {
     const addBtn = screen.getByTestId('add-btn')
 
     fireEvent.click(addBtn)
@@ -33,7 +33,7 @@ describe('first', () => {
     expect(onAdd).toBeCalledTimes(2)
   })
 
-  test('deve renderizar o botão remover e verificar se a função onRemove foi invocada', () => {
+  test('deve renderizar o botão remover e verificar se a função onRemove foi invocada corretamente', () => {
     const removeBtn = screen.getByTestId('remove-btn')
 
     fireEvent.click(removeBtn)

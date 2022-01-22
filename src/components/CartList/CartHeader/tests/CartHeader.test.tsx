@@ -4,7 +4,7 @@ import { MemoryRouter } from 'react-router-dom'
 import CartHeader from '..'
 
 describe('CartHeader', () => {
-  test('deve renderizar o Cabeçalho do carrinho', () => {
+  test('deve renderizar o cabeçalho do carrinho', () => {
     render(<CartHeader />, { wrapper: MemoryRouter })
 
     const title = screen.getByTestId('header')
