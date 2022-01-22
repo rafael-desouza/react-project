@@ -7,7 +7,7 @@ const Container = styled.div`
   grid-template-columns: repeat(10, auto);
   grid-template-rows: repeat(5, auto);
   grid-column-gap: 1rem;
-  box-shadow: 0 0 0.25rem 0.1rem var(--primary);
+  box-shadow: 0 0 0.25rem 0.1rem #808080;
   margin-bottom: 1rem;
 
   & img {
@@ -43,7 +43,7 @@ const Container = styled.div`
         cursor: pointer;
         border: none;
         width: 100%;
-        color: red;
+        color: var(--primary);
         border-radius: 0.25rem;
         font-size: 2rem;
         padding: 0.2rem 1rem;
@@ -68,7 +68,7 @@ const Container = styled.div`
     & .price {
       font-size: 2rem;
       font-weight: bold;
-      color: red;
+      color: var(--primary);
       margin-right: 0.5rem;
     }
 
@@ -109,7 +109,7 @@ const Container = styled.div`
           cursor: pointer;
           border: none;
           width: 100%;
-          color: red;
+          color: var(--primary);
           border-radius: 0.25rem;
           font-size: 1rem;
           padding: 0.1rem 0.5rem;
@@ -136,7 +136,7 @@ const Container = styled.div`
       & .price {
         font-size: 1rem;
         font-weight: bold;
-        color: red;
+        color: var(--primary);
         margin-right: 0.5rem;
       }
 

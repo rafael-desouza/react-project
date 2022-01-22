@@ -5,7 +5,7 @@ import ProductsListHeader from '..'
 
 describe('Main Header', () => {
   test('deve renderizar um elemento header', () => {
-    render(<ProductsListHeader />, { wrapper: MemoryRouter })
+    render(<ProductsListHeader onSearch={jest.fn} />, { wrapper: MemoryRouter })
     const title = screen.getByTestId('header')
 
     expect(title).toBeInTheDocument()

@@ -3,8 +3,13 @@ import React from 'react'
 import CartButton from './CartButton'
 import Container from './styles'
 import { FaUserCircle } from 'react-icons/fa'
+import SearchProduct from './SearchProduct'
 
-const ProductsListHeader = () => {
+type Props = {
+  onSearch: (nameToSearch: string) => void
+}
+
+const ProductsListHeader = ({ onSearch }: Props) => {
   return (
     <Container>
       <header data-testid="header" className="header-content">
@@ -18,6 +23,7 @@ const ProductsListHeader = () => {
         </span>
         <CartButton />
       </header>
+      <SearchProduct onSearch={onSearch} />
     </Container>
   )
 }

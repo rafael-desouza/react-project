@@ -33,27 +33,53 @@ const Container = styled.div`
     }
 
     & .total {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem 1rem;
+
       .order {
-        font-size: 2rem;
-        margin-top: 2rem;
+        font-size: 1.5rem;
         border-bottom: 1px solid var(--primary);
         font-weight: 500;
         color: var(--primary);
       }
 
       & .amount-info {
+        margin-top: 0.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 3rem 2rem;
 
         & .products {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
 
         & .amount {
-          font-size: 1.7rem;
+          font-size: 1.2rem;
           font-weight: 600;
+        }
+      }
+
+      .close {
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .btn-close-order {
+          color: var(--onPrimary);
+          background-color: var(--primary);
+          border: none;
+          border-radius: 0.25rem;
+          padding: 0.5rem 0.8rem;
+          outline: none;
+          transition: all 0.5s;
+
+          &:hover {
+            background-color: var(--onPrimary);
+            color: var(--primary);
+            box-shadow: 0 0 1px 1px var(--primary);
+          }
         }
       }
     }

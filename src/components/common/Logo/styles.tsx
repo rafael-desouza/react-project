@@ -7,6 +7,7 @@ const Container = styled.span`
     font-weight: bolder;
     position: relative;
     font-size: 2.5rem;
+    user-select: none;
 
     ::before {
       content: ' ';

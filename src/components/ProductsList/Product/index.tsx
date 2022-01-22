@@ -28,7 +28,11 @@ const Product: React.FC<Props> = ({ item }) => {
           <ProductModal onClose={showProductInfo} item={item} />
         </Modal>
       )}
-      <img src={item.image} alt="" onClick={showProductInfo} />
+      <img
+        src={item.image}
+        alt={`${item.image}-image`}
+        onClick={showProductInfo}
+      />
       <div className="content">
         <div className="item-name">{item.name}</div>
         <div className="item-price" data-testid="item-price">

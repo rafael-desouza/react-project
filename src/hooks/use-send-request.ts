@@ -7,7 +7,8 @@ const useSendRequest = () => {
 
   const sendRequest = async (
     configs: AxiosRequestConfig,
-    applyData: (data: AxiosResponse) => void
+    applyData: (data: AxiosResponse, search: string | null) => void,
+    search: string | null
   ) => {
     setIsLoading(true)
 
@@ -16,7 +17,7 @@ const useSendRequest = () => {
       setIsLoading(false)
       setError(null)
 
-      applyData(response)
+      applyData(response, search)
     } catch (error) {
       setIsLoading(false)
       setError((error as Error).message || 'Opps! Something went wrong')

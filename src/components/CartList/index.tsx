@@ -46,6 +46,9 @@ const CartList = () => {
           <span className="products">{amountInfo}</span>
           <span className="amount">{`R$ ${totalAmount}`}</span>
         </div>
+        <div className="close">
+          <button className="btn-close-order">Continuar</button>
+        </div>
       </div>
     )
   }
