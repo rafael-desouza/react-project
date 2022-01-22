@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   .spin-loading {
+    width: 100%;
     margin: auto;
     font-size: 10rem;
     color: var(--primary);
