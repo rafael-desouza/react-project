@@ -1,5 +1,6 @@
-import Container from './styles'
 import React, { useContext } from 'react'
+
+import Container from './styles'
 import CartContext from 'store/cart-context'
 import CartHeader from './CartHeader'
 import CartItem from './CartItem'

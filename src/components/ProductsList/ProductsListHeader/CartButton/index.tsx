@@ -1,6 +1,7 @@
-import CartIcon from 'assets/images/CartIcon'
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+
+import CartIcon from 'assets/images/CartIcon'
 import CartContext from 'store/cart-context'
 import Container from './styles'
 

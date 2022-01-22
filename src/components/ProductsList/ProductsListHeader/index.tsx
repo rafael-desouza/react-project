@@ -1,8 +1,9 @@
-import Logo from 'components/common/Logo'
 import React from 'react'
+import { FaUserCircle } from 'react-icons/fa'
+
+import Logo from 'components/common/Logo'
 import CartButton from './CartButton'
 import Container from './styles'
-import { FaUserCircle } from 'react-icons/fa'
 import SearchProduct from './SearchProduct'
 
 type Props = {

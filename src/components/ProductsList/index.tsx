@@ -1,11 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react'
-
 import { AxiosRequestConfig, AxiosResponse } from 'axios'
+import { FaSadTear } from 'react-icons/fa'
+
 import ProductsListHeader from 'components/ProductsList/ProductsListHeader'
 import useSendRequest from 'hooks/use-send-request'
 import Footer from 'components/CartList/Footer'
-import { FaSadTear } from 'react-icons/fa'
-
 import Item from 'types/item'
 import Product from './Product'
 import Container from './styles'

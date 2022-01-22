@@ -1,5 +1,6 @@
-import Modal from 'components/UI/Modal'
 import React, { memo, useContext, useState } from 'react'
+
+import Modal from 'components/UI/Modal'
 import CartContext from 'store/cart-context'
 import Item from 'types/item'
 import ProductModal from '../ProductModal'
