@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { AxiosRequestConfig, AxiosResponse } from 'axios'
 import { FaSadTear } from 'react-icons/fa'
+import { FaHammer } from 'react-icons/fa'
 
 import ProductsListHeader from 'components/ProductsList/ProductsListHeader'
 import useSendRequest from 'hooks/use-send-request'
@@ -17,7 +18,7 @@ import Loading from 'components/UI/Loading'
 const ProductsList = () => {
   const [items, setItems] = useState<Item[]>([])
   const [search, setSearch] = useState<string | null>(null)
-  const { sendRequest: getItemsList, isLoading } = useSendRequest()
+  const { sendRequest: getItemsList, isLoading, error } = useSendRequest()
 
   /**
    * Define a value to search on products list
@@ -98,6 +99,15 @@ const ProductsList = () => {
     )
   }
 
+  const requestError = () => {
+    return (
+      <div className="error">
+        <FaHammer className="error-ico" />
+        <p>Não se preocupe que já estamos trabalhando nisso</p>
+      </div>
+    )
+  }
+
   return (
     <Container>
       <ProductsListHeader onSearch={infoToSearch} />
@@ -106,7 +116,8 @@ const ProductsList = () => {
           <Loading />
         </div>
       )}
-      {!isLoading && items.length === 0 && emptyListProducts()}
+      {!isLoading && !error && items.length === 0 && emptyListProducts()}
+      {!isLoading && error && requestError()}
       {items.length > 0 && (
         <div className="products-list">
           {items.map(product => (

@@ -13,6 +13,18 @@ const Container = styled.div`
     justify-content: center;
   }
 
+  & .error {
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+
+    & .error-ico {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+      fill: var(--primary);
+    }
+  }
+
   & .empty-list {
     display: flex;
     flex-direction: column;
