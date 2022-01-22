@@ -9,7 +9,7 @@ type CartContextObject = {
   removeItem: (item: Item) => void
 }
 
-const CartContext = React.createContext<CartContextObject>({
+export const CartContext = React.createContext<CartContextObject>({
   items: [],
   totalAmount: 0,
   addItem: () => {},
