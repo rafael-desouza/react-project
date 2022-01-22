@@ -10,15 +10,28 @@ import Product from './Product'
 import Container from './styles'
 import Loading from 'components/UI/Loading'
 
+/**
+ * Display products list
+ * @returns JSX.element
+ */
 const ProductsList = () => {
   const [items, setItems] = useState<Item[]>([])
   const [search, setSearch] = useState<string | null>(null)
   const { sendRequest: getItemsList, isLoading } = useSendRequest()
 
-  const createSearch = (nameToSearch: string) => {
-    setSearch(nameToSearch)
+  /**
+   * Define a value to search on products list
+   * @param infoToSearch
+   */
+  const infoToSearch = (infoToSearch: string) => {
+    setSearch(infoToSearch)
   }
 
+  /**
+   * Get data and converts into a JSX element
+   * @param itemsListObject data to be displayed
+   * @param search (optional) filter data acquired
+   */
   const createList = (
     itemsListObject: AxiosResponse,
     search: string | null
@@ -50,6 +63,9 @@ const ProductsList = () => {
     setItems(newItemsList)
   }
 
+  /**
+   * Get products list
+   */
   const fetchItemsList = useCallback((search: string | null) => {
     const configs: AxiosRequestConfig = {
       method: 'GET',
@@ -63,6 +79,9 @@ const ProductsList = () => {
     fetchItemsList(search)
   }, [fetchItemsList, search])
 
+  /**
+   * empty list message
+   */
   const emptyListProducts = () => {
     return (
       <div className="empty-list">
@@ -81,7 +100,7 @@ const ProductsList = () => {
 
   return (
     <Container>
-      <ProductsListHeader onSearch={createSearch} />
+      <ProductsListHeader onSearch={infoToSearch} />
       {isLoading && (
         <div className="loading">
           <Loading />

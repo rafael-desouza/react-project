@@ -5,6 +5,10 @@ import CartContext from 'store/cart-context'
 import CartHeader from './CartHeader'
 import CartItem from './CartItem'
 
+/**
+ * Display all itens o cart
+ * @returns JSX.elements
+ */
 const CartList = () => {
   const cartContext = useContext(CartContext)
   const totalAmount = cartContext.totalAmount.toFixed(2)

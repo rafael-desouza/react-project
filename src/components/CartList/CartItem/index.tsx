@@ -9,6 +9,13 @@ type Props = {
   onRemove: (item: Item) => void
 }
 
+/**
+ * Display a item card of cart
+ * @param item item to get infos
+ * @param onAdd function to add itens into cart
+ * @param onRemove function to remove intens of cart
+ * @returns JSX.element
+ */
 const CartItem = ({ item, onAdd, onRemove }: Props) => {
   return (
     <Container>

@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom'
 import Logo from 'components/common/Logo'
 import Container from './styles'
 
+/**
+ * Display a cart header
+ * @returns JSX.element
+ */
 const CartHeader = () => {
   return (
     <Container>

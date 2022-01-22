@@ -6,11 +6,7 @@ const GlobalStyle = createGlobalStyle`
     --surface: #43BA88;
     --primary: #F80032;
     --secondary: #2B2B2B;
-    --onBackground: #222222;
-    --onSurface: #F1F1F1;
     --onPrimary:#F1F1F1;
-    --onSecondary:#F1F1F1 ;
-
     --default-header: 8rem;
     }   
     
@@ -28,7 +24,6 @@ const GlobalStyle = createGlobalStyle`
             font-size: 60%;
         }
     }
-
 
 `
 

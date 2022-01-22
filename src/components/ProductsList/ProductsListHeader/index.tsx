@@ -10,6 +10,11 @@ type Props = {
   onSearch: (nameToSearch: string) => void
 }
 
+/**
+ *Products List Header
+ * @param param onSearch - function to be executed when input search to be triggered
+ * @returns JSX.element
+ */
 const ProductsListHeader = ({ onSearch }: Props) => {
   return (
     <Container>

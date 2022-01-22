@@ -5,6 +5,10 @@ import Container from './styles'
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import Logo from 'components/common/Logo'
 
+/**
+ * Display footer
+ * @returns JSX.element
+ */
 const Footer = () => {
   return (
     <Container>

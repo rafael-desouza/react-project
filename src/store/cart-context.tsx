@@ -37,6 +37,9 @@ const defaultState: State = {
   totalAmount: 0,
 }
 
+/**
+ * Contains the logic to handle cartState
+ */
 const cartReducer = (state: State = defaultState, action: Action) => {
   const { type, item: requestItem } = action
 
@@ -98,6 +101,11 @@ const cartReducer = (state: State = defaultState, action: Action) => {
   return defaultState
 }
 
+/**
+ * Return a cart state and functions to handle the state
+ * @param props children
+ * @returns React.FC
+ */
 export const CartContextProvider: React.FC = props => {
   const [cartState, dispatchCartAction] = useReducer(cartReducer, defaultState)
 

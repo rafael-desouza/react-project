@@ -5,6 +5,10 @@ import CartIcon from 'assets/images/CartIcon'
 import CartContext from 'store/cart-context'
 import Container from './styles'
 
+/**
+ *shows cart list
+ * @returns JSX.element
+ */
 const CartButton = () => {
   const cartContext = useContext(CartContext)
   const { items } = cartContext

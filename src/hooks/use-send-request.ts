@@ -1,6 +1,10 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
 import { useState } from 'react'
 
+/**
+ * Returns a function to fetch data and status of loading and erros.
+ * @returns Returns a stateful value, and a function to update it.
+ */
 const useSendRequest = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>()

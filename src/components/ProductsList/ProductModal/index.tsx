@@ -8,6 +8,11 @@ type Props = {
   item: Item
 }
 
+/**
+ *Display image of selected product
+ * @param onClose action to be dispatched on close click
+ * @returns JSX.element
+ */
 const ProductModal = ({ onClose, item }: Props) => {
   return (
     <Container className="img" img_url={item.image} data-testid="img-modal">

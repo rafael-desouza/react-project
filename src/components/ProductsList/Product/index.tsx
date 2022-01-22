@@ -10,7 +10,12 @@ interface Props {
   item: Item
 }
 
-const Product: React.FC<Props> = ({ item }) => {
+/**
+ * Display a card with item infos
+ * @param item Item to show infos on card
+ * @returns JSX.element
+ */
+const Product = ({ item }: Props) => {
   const [productInfoIsShown, setProductInfoIsShown] = useState(false)
 
   const cartState = useContext(CartContext)
