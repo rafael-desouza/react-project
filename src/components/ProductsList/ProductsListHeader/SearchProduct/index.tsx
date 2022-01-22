@@ -31,9 +31,10 @@ const SearchProduct = ({ onSearch }: Props) => {
           type="text"
           className="input-search"
           placeholder="busque aqui seu produto"
+          data-testid="input-search"
           ref={inputRef}
         />
-        <FaSearch className="ico" onClick={search} />
+        <FaSearch className="ico" onClick={search} data-testid="ico" />
       </form>
     </Container>
   )
