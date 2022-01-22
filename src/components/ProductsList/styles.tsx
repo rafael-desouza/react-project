@@ -56,6 +56,7 @@ const Container = styled.div`
   @media (min-width: 1080px) {
     & .products-list {
       width: 80%;
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 `
