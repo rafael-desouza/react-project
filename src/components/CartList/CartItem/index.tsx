@@ -16,10 +16,6 @@ const CartItem = ({ item, onAdd, onRemove }: Props) => {
         <div className="item-name" data-testid="item-name">
           {item.name}
         </div>
-        <div className="info" data-testid="info">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-          voluptate numquam, ullam nemo eaque laudantium sed expedita quaerat
-        </div>
       </div>
       <div className="selectors">
         <div className="selectors-control">

@@ -18,12 +18,6 @@ describe('first', () => {
     expect(itemName).toHaveClass('item-name')
   })
 
-  test('deve renderizar a info do item com a classe info', () => {
-    const itemInfo = screen.getByTestId('info')
-
-    expect(itemInfo).toHaveClass('info')
-  })
-
   test('deve renderizar o total do item com a classe amount', () => {
     const itemAmount = screen.getByTestId('amount')
 

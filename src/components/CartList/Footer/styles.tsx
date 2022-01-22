@@ -21,7 +21,7 @@ const Container = styled.div`
     grid-column: 2/3;
     display: flex;
     gap: 1rem;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
     .ico {

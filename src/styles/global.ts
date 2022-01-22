@@ -23,10 +23,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     html{
-        @media (max-width: 1080px){
-            font-size: 70%;
-        }
-
+   
         @media (max-width: 720px){
             font-size: 60%;
         }
